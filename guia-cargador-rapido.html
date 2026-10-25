@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cómo elegir un cargador rápido USB-C · Cazado.es</title>
+<meta name="description" content="Qué cargador comprar para iPhone, Samsung, Pixel o MacBook: vatios, USB PD y PPS, varios puertos, GaN, cable y precios orientativos.">
+<link rel="canonical" href="https://cazado.es/guia-cargador-rapido">
+<meta property="og:title" content="Cómo elegir un cargador rápido USB-C · Cazado.es">
+<meta property="og:description" content="Qué cargador comprar para iPhone, Samsung, Pixel o MacBook: vatios, USB PD y PPS, varios puertos, GaN, cable y precios orientativos.">
+<meta property="og:url" content="https://cazado.es/guia-cargador-rapido">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Ccircle%20cx='30'%20cy='34'%20r='23.5'%20fill='none'%20stroke='%23C62F1B'%20stroke-width='5'/%3E%3Ccircle%20cx='30'%20cy='34'%20r='12.5'%20fill='none'%20stroke='%23C62F1B'%20stroke-width='5'/%3E%3Ccircle%20cx='30'%20cy='34'%20r='4.5'%20fill='%23C62F1B'/%3E%3Cpath%20d='M31%2033%20L56%208%20M56%208%20L56%201.5%20M56%208%20L62.5%208%20M50%2014%20L50%207.5%20M50%2014%20L56.5%2014'%20fill='none'%20stroke='%23FFFFFF'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3Cpath%20d='M31%2033%20L56%208%20M56%208%20L56%201.5%20M56%208%20L62.5%208%20M50%2014%20L50%207.5%20M50%2014%20L56.5%2014'%20fill='none'%20stroke='%230F1B2D'%20stroke-width='4.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+/* Concepto: web de comparador con aire de "caza": diana roja sobre azul noche, tarjetas limpias, verde solo para ahorro. */
+:root{
+  --bg:#F5F7FB; --surface:#FFFFFF; --ink:#0F1B2D; --muted:#55627A; --line:#DDE3EE;
+  --soft:#E9EDF6; --accent:#C62F1B; --accent-ink:#FFFFFF; --good:#0B6B49; --good-bg:#DFF3EA;
+  --display:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1624; --surface:#152038; --ink:#EAF0FA; --muted:#9FB0CA; --line:#26344F;
+    --soft:#1B2943; --accent:#FF6B55; --accent-ink:#1A0B08; --good:#4FD1A0; --good-bg:#12332A;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1624; --surface:#152038; --ink:#EAF0FA; --muted:#9FB0CA; --line:#26344F;
+  --soft:#1B2943; --accent:#FF6B55; --accent-ink:#1A0B08; --good:#4FD1A0; --good-bg:#12332A;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--body); font-size:16px; line-height:1.6;
+  padding-block:0;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display); line-height:1.12; letter-spacing:-0.01em; text-wrap:balance; margin:0}
+p{margin:0}
+.wrap{max-width:1080px; margin-inline:auto}
+:focus-visible{outline:3px solid var(--accent); outline-offset:2px; border-radius:6px}
+
+/* Cabecera */
+.top{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px 16px; padding-block:14px}
+.logo{display:flex; align-items:center; gap:10px; text-decoration:none; font-family:var(--display); font-weight:800; font-size:24px; letter-spacing:-0.02em; min-height:44px}
+.logo svg{flex:none; color:var(--accent)}
+.logo small{font-family:var(--body); font-weight:600; font-size:13px; color:var(--muted); letter-spacing:0}
+nav{display:flex; gap:4px; flex-wrap:wrap}
+nav a{display:inline-flex; align-items:center; min-height:44px; padding-inline:12px; border-radius:10px; text-decoration:none; font-weight:600; font-size:15px; color:var(--muted)}
+nav a:hover{background:var(--soft); color:var(--ink)}
+
+/* Portada */
+.hero{padding-block:28px 40px; display:grid; gap:20px}
+.estado{display:inline-flex; align-items:center; gap:8px; align-self:start; width:fit-content; background:var(--soft); border-radius:999px; padding:6px 14px; font-size:14px; font-weight:600; color:var(--muted)}
+.estado i{width:8px; height:8px; border-radius:50%; background:var(--accent); display:block}
+.hero h1{font-size:clamp(34px, 8vw, 62px); font-weight:800; max-width:16ch}
+.hero .sub{font-size:clamp(17px, 2.4vw, 20px); color:var(--muted); max-width:52ch}
+.buscar{display:flex; gap:8px; flex-wrap:wrap; max-width:620px}
+.buscar input{flex:1 1 220px; min-width:0; min-height:52px; border:2px solid var(--line); background:var(--surface); color:var(--ink); border-radius:14px; padding-inline:16px; font:inherit; font-size:17px}
+.buscar input::placeholder{color:var(--muted)}
+.buscar input:focus{border-color:var(--accent); outline:none}
+.btn{display:inline-flex; align-items:center; justify-content:center; min-height:52px; padding-inline:22px; border-radius:14px; border:0; font:inherit; font-weight:700; font-size:16px; text-decoration:none; cursor:pointer; background:var(--accent); color:var(--accent-ink)}
+.btn:hover{filter:brightness(1.07)}
+.btn.sec{background:var(--surface); color:var(--ink); border:2px solid var(--line)}
+.btn.sec:hover{border-color:var(--ink); filter:none}
+.acciones{display:flex; gap:10px; flex-wrap:wrap}
+
+/* Secciones */
+section{padding-block:36px; scroll-margin-top:8px}
+.kicker{font-size:13px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent); margin-bottom:8px}
+h2{font-size:clamp(26px, 5vw, 38px); font-weight:800}
+.lead{color:var(--muted); max-width:60ch; margin-top:10px}
+
+/* Chollo cazado */
+.chollo-grid{display:grid; gap:20px; margin-top:24px; grid-template-columns:minmax(0,1fr)}
+@media (min-width:820px){ .chollo-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:start} }
+.ficha{background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:18px; display:grid; gap:12px}
+.ficha .etiqueta{font-size:13px; font-weight:700; color:var(--muted); display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap}
+.foto{height:170px; border-radius:14px; background:var(--soft); display:grid; place-items:center; color:var(--muted); font-size:14px; position:relative}
+.dto{position:absolute; top:10px; left:10px; background:var(--good); color:var(--surface); font-weight:800; padding:4px 10px; border-radius:10px; font-size:15px}
+.ficha h3{font-size:19px; font-weight:700}
+.precios{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap}
+.precios strong{font-family:var(--display); font-size:32px; font-weight:800}
+.precios s{color:var(--muted)}
+.minimo{font-size:14px; font-weight:600; color:var(--good)}
+.reglas{display:grid; gap:12px; padding:0; margin:0; list-style:none}
+.reglas li{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:14px 16px; display:grid; gap:2px}
+.reglas b{font-family:var(--display); font-size:17px}
+.reglas span{color:var(--muted); font-size:15px}
+.vacio{margin-top:6px; color:var(--muted); font-size:15px}
+
+/* Guías */
+.guias{display:grid; gap:14px; margin-top:24px; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr))}
+.guia-card{background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:18px; display:grid; gap:8px; align-content:start; text-decoration:none}
+a.guia-card:hover{border-color:var(--accent)}
+.guia-card h3{font-size:20px; font-weight:700}
+.guia-card p{color:var(--muted); font-size:15px}
+.guia-card .pie{font-weight:700; font-size:14px; color:var(--accent)}
+.guia-card.pronto{background:transparent; border-style:dashed}
+.guia-card.pronto .pie{color:var(--muted)}
+.guia-card[hidden]{display:none}
+#sin-resultados{margin-top:16px; color:var(--muted)}
+
+/* Artículo */
+article{background:var(--surface); border:1px solid var(--line); border-radius:22px; padding:clamp(18px, 4vw, 40px); margin-top:8px}
+article .meta{color:var(--muted); font-size:14px; margin-top:8px}
+article h3{font-size:22px; font-weight:700; margin-top:30px}
+article p, article li{max-width:68ch}
+article p{margin-top:12px}
+article ul{margin:12px 0 0; padding-left:22px; display:grid; gap:6px}
+.formula{display:inline-block; margin-top:12px; background:var(--soft); border-radius:12px; padding:10px 16px; font-weight:700; font-family:var(--display); font-size:18px}
+.tabla{overflow-x:auto; margin-top:14px; border:1px solid var(--line); border-radius:14px}
+table{border-collapse:collapse; width:100%; min-width:460px; font-size:15px}
+th,td{text-align:left; padding:10px 14px; border-bottom:1px solid var(--line); vertical-align:top}
+th{background:var(--soft); font-size:13px; letter-spacing:0.04em; text-transform:uppercase; color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700; min-width:8.5em}
+.aviso{margin-top:16px; background:var(--soft); border-radius:14px; padding:14px 16px; font-size:15px}
+details{border-top:1px solid var(--line); padding-block:12px}
+details:first-of-type{margin-top:12px}
+summary{cursor:pointer; font-weight:700; min-height:44px; display:flex; align-items:center}
+details p{margin-top:4px}
+.comparar{margin-top:30px; border:2px dashed var(--line); border-radius:16px; padding:18px; color:var(--muted)}
+
+/* Cómo funciona */
+.pasos{display:grid; gap:14px; margin-top:24px; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr))}
+.paso{background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:18px; display:grid; gap:6px; align-content:start}
+.paso h3{font-size:19px; font-weight:700}
+.paso p{color:var(--muted); font-size:15px}
+
+/* Pie */
+footer{border-top:1px solid var(--line); padding-block:28px 40px; display:grid; gap:14px; color:var(--muted); font-size:14px}
+footer h3{font-size:16px; color:var(--ink); font-weight:700}
+footer .hueco{background:var(--soft); border-radius:6px; padding:0 6px; color:var(--ink); font-weight:600}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+.migas{font-size:14px; color:var(--muted); padding-top:20px}
+.migas a{color:var(--muted)}
+.siguiente{display:flex; flex-wrap:wrap; gap:12px; margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="/" aria-label="Cazado.es, ir al inicio">
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><circle cx="30" cy="34" r="23.5" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="30" cy="34" r="12.5" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="30" cy="34" r="4.5" fill="currentColor"/><path d="M31 33 L56 8 M56 8 L56 1.5 M56 8 L62.5 8 M50 14 L50 7.5 M50 14 L56.5 14" fill="none" style="stroke:var(--bg)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 33 L56 8 M56 8 L56 1.5 M56 8 L62.5 8 M50 14 L50 7.5 M50 14 L56.5 14" fill="none" style="stroke:var(--ink)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Cazado<small>.es</small></span>
+    </a>
+    <nav aria-label="Principal">
+      <a href="/#chollos">Chollos</a>
+      <a href="/#guias">Guías</a>
+      <a href="/#como-funciona">Cómo funciona</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="migas"><a href="/">Inicio</a> › <a href="/#guias">Guías de compra</a></p>
+    <section id="guia-cargador">
+      <article>
+        <div class="kicker">Guía de compra</div>
+        <h2>Cómo elegir un cargador rápido USB-C</h2>
+        <p class="meta">Datos de carga y precios revisados en octubre de 2026.</p>
+        <p>Para casi cualquier móvil actual basta un cargador <b>USB-C de 45 W con USB Power Delivery (PD) y PPS</b>. Carga a tope un iPhone, un Samsung o un Pixel, y también una tablet o un portátil pequeño. Si solo cargas un iPhone, uno de 30 a 40 W ya da la máxima velocidad. Si quieres cargar también el portátil, sube a 65 W o más.</p>
+
+        <h3>1. Lo que importa: vatios, PD y PPS</h3>
+        <ul>
+          <li><b>Vatios (W):</b> la potencia máxima. Más vatios no estropea el móvil: el teléfono pide solo lo que acepta.</li>
+          <li><b>USB Power Delivery (PD):</b> el estándar de carga rápida por USB-C. Lo usan iPhone, Pixel, Samsung, tablets y portátiles. Si la ficha no dice «PD», descártalo.</li>
+          <li><b>PPS:</b> una función de PD que ajusta el voltaje poco a poco. Los Samsung Galaxy la necesitan para su carga súper rápida: sin PPS, un Galaxy S25 Ultra se queda en unos 23 W aunque el cargador sea de 65 W.</li>
+        </ul>
+        <p>Quick Charge, SuperVOOC o HyperCharge son protocolos propios de cada marca. Solo dan su máxima velocidad con el cargador original; con un cargador PD normal cargan, pero más despacio.</p>
+
+        <h3>2. Cuántos vatios aprovecha tu dispositivo</h3>
+        <div class="tabla"><table>
+          <thead><tr><th>Dispositivo</th><th>Máximo por cable</th><th>Cargador recomendado</th></tr></thead>
+          <tbody>
+            <tr><td>iPhone 17, 17 Pro y 17 Pro Max</td><td>Unos 36 W (50 % en unos 20 min)</td><td>USB-C PD de 40 W</td></tr>
+            <tr><td>iPhone 16 y anteriores con USB-C, iPhone Air</td><td>50 % en unos 30 min con 20 W</td><td>USB-C PD de 20 a 30 W</td></tr>
+            <tr><td>Galaxy S25+ y S25 Ultra</td><td>45 W</td><td>USB-C PD <b>con PPS</b> de 45 W</td></tr>
+            <tr><td>Galaxy S25</td><td>25 W</td><td>USB-C PD con PPS de 25 W o más</td></tr>
+            <tr><td>Pixel 10 Pro XL</td><td>45 W (70 % en 30 min)</td><td>USB-C PD con PPS de 45 W</td></tr>
+            <tr><td>Pixel 10 y 10 Pro</td><td>Unos 30 W (55 % en 30 min)</td><td>USB-C PD con PPS de 30 W o más</td></tr>
+            <tr><td>Xiaomi, Oppo, OnePlus con carga propia</td><td>67 a 120 W solo con su cargador</td><td>El original de la marca</td></tr>
+            <tr><td>MacBook Air M4</td><td>67 W en carga rápida</td><td>USB-C PD de 65 a 70 W</td></tr>
+            <tr><td>MacBook Pro 14"</td><td>96 W en carga rápida</td><td>USB-C PD de 100 W</td></tr>
+          </tbody>
+        </table></div>
+        <p>Con el iPhone 17, un cargador de 20 W tarda 1 h 50 min en la carga completa y uno de 40 W, 1 h 42 min. La diferencia se nota sobre todo en los primeros 20 minutos.</p>
+
+        <h3>3. Uno o varios puertos</h3>
+        <p>Un cargador de varios puertos <b>reparte su potencia</b>. El número grande de la caja es el total, no lo que da cada puerto a la vez. Un cargador de 65 W con dos USB-C da 65 W por un solo puerto, pero con dos aparatos puede bajar a 45 W + 20 W.</p>
+        <ul>
+          <li><b>Un solo móvil:</b> un puerto, más pequeño y barato.</li>
+          <li><b>Móvil + reloj o auriculares:</b> dos puertos y 45 W totales van sobrados.</li>
+          <li><b>Móvil + portátil:</b> 65 W o más, comprobando cuánto da el puerto principal con los dos conectados.</li>
+        </ul>
+
+        <h3>4. GaN, cable y seguridad</h3>
+        <p><b>GaN</b> es el material de los cargadores modernos: más pequeños y se calientan menos con la misma potencia. A partir de 45 W merece la pena.</p>
+        <p><b>El cable también cuenta.</b> Un cable USB-C normal (3 A) aguanta hasta 60 W, suficiente para un móvil. Para un portátil de más de 60 W hace falta un cable de 5 A con chip e-marker, que suele indicar «100 W» o «240 W».</p>
+        <div class="aviso">En una prueba de la organización británica Electrical Safety First, 49 de 50 cargadores que imitaban a los de Apple no superaron las pruebas de seguridad eléctrica. Compra marcas conocidas, comprueba el marcado CE y desconfía de un «original» muy por debajo de su precio.</div>
+
+        <h3>5. Lista rápida antes de comprar</h3>
+        <ul>
+          <li>Puerto USB-C y la indicación USB Power Delivery (PD).</li>
+          <li>Si es para un Samsung o un Pixel, también PPS.</li>
+          <li>Vatios suficientes para tu dispositivo más exigente.</li>
+          <li>Si tiene varios puertos, cuánto da cada uno a la vez.</li>
+          <li>Un cable USB-C a USB-C (de 5 A si es para un portátil de más de 60 W).</li>
+          <li>Marca conocida y marcado CE.</li>
+        </ul>
+
+        <h3>6. Precios orientativos</h3>
+        <div class="tabla"><table>
+          <thead><tr><th>Cargador</th><th>Puertos</th><th>Precio habitual</th><th>Mejor precio visto</th></tr></thead>
+          <tbody>
+            <tr><td>Anker Nano 45 W</td><td>1 USB-C</td><td>39,99 €</td><td>29,59 € (sept. 2026)</td></tr>
+            <tr><td>Ugreen Nexode 65 W GaN</td><td>2 USB-C + 1 USB-A</td><td>29,99 €</td><td>18,79 € (sept. 2026)</td></tr>
+            <tr><td>Apple 40 W Dynamic Power Adapter</td><td>1 USB-C</td><td>45 € (sin cable)</td><td>—</td></tr>
+          </tbody>
+        </table></div>
+        <p>Los precios cambian a menudo: compruébalos en la tienda antes de comprar. Solo publicamos un cargador como <b>chollo cazado</b> cuando baja al menos un 20 % de su precio habitual y está en su mínimo de los últimos meses.</p>
+
+        <h3>7. Preguntas frecuentes</h3>
+        <details>
+          <summary>¿Un cargador de más vatios estropea el móvil?</summary>
+          <p>No. El móvil y el cargador acuerdan la potencia y el teléfono solo toma la que admite.</p>
+        </details>
+        <details>
+          <summary>¿Tiene que ser de la misma marca que mi móvil?</summary>
+          <p>No, salvo en marcas con carga propia como Xiaomi u Oppo. Para iPhone, Samsung y Pixel basta un cargador USB-C PD de una marca fiable (con PPS en Samsung y Pixel).</p>
+        </details>
+        <details>
+          <summary>¿Puedo usar el cargador del portátil para el móvil?</summary>
+          <p>Sí, si es USB-C PD. El móvil cargará a su velocidad máxima, ni más ni menos.</p>
+        </details>
+
+        <p class="meta">Fuentes: pruebas de carga de Notebookcheck (iPhone 17), SamMobile y techtest.org (Galaxy S25), 9to5Google y GSMArena (Pixel 10), Ugreen (MacBook), Faceofit (cables), Trusted Reviews (cargadores falsos) y precios de Gizmodo y Teknófilo.</p>
+
+        <div class="comparar"><b>Comparativa de modelos y precios</b><br>Aquí aparecerán los cargadores con su precio en cada tienda cuando conectemos el comparador.</div>
+        <div class="siguiente">
+          <a class="btn" href="https://t.me/Cazado_chollos" target="_blank" rel="noopener">Recibir chollos en Telegram</a>
+          <a class="btn sec" href="/guia-powerbank">Leer: Cómo elegir un powerbank</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h3>Enlaces de afiliado</h3>
+      <p>Algunos enlaces de Cazado podrán ser de afiliado: si compras a través de ellos, la tienda puede pagarnos una comisión sin coste extra para ti. Lo indicaremos claramente junto a cada enlace y no influye en el orden de los precios.</p>
+    </div>
+    <div>
+      <h3>Aviso legal</h3>
+      <p>En cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información (LSSI), se informa de que este sitio web es titularidad de:</p>
+      <p>Razón social: IMBUSOL SL<br>
+      CIF: B87925251<br>
+      Domicilio social: Avenida del Mediterráneo, 5, 28007 Madrid<br>
+      Datos registrales: Registro Mercantil de Madrid, tomo 36.400, folio 150, hoja M-653969, inscripción 1.ª<br>
+      Correo de contacto: <a href="mailto:info@cazado.es">info@cazado.es</a></p>
+      <p>La información de esta web es orientativa. Los precios pueden cambiar en cualquier momento y debes confirmarlos en la tienda antes de comprar.</p>
+    </div>
+    <div>
+      <h3>Privacidad y cookies</h3>
+      <p>Esta web no usa cookies ni recoge datos personales. El buscador funciona solo en tu navegador. Si entras en el canal de Telegram o en una tienda, se aplican sus propias políticas de privacidad.</p>
+    </div>
+    <p>© Cazado.es · Caza el mejor precio · <a href="mailto:info@cazado.es">info@cazado.es</a></p>
+  </footer>
+</div>
+</body>
+</html>
