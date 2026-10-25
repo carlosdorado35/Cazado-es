@@ -98,6 +98,7 @@ a.guia-card:hover{border-color:var(--accent)}
 .guia-card .pie{font-weight:700; font-size:14px; color:var(--accent)}
 .guia-card.pronto{background:transparent; border-style:dashed}
 .guia-card.pronto .pie{color:var(--muted)}
+.guia-card[hidden]{display:none}
 #sin-resultados{margin-top:16px; color:var(--muted)}
 
 /* Artículo */
@@ -113,7 +114,7 @@ table{border-collapse:collapse; width:100%; min-width:460px; font-size:15px}
 th,td{text-align:left; padding:10px 14px; border-bottom:1px solid var(--line); vertical-align:top}
 th{background:var(--soft); font-size:13px; letter-spacing:0.04em; text-transform:uppercase; color:var(--muted)}
 tr:last-child td{border-bottom:0}
-td:first-child{font-weight:700; white-space:nowrap}
+td:first-child{font-weight:700; min-width:8.5em}
 .aviso{margin-top:16px; background:var(--soft); border-radius:14px; padding:14px 16px; font-size:15px}
 details{border-top:1px solid var(--line); padding-block:12px}
 details:first-of-type{margin-top:12px}
@@ -197,11 +198,11 @@ footer .hueco{background:var(--soft); border-radius:6px; padding:0 6px; color:va
           <p>Capacidad real, límite de 100 Wh en el avión, potencia de carga y seguridad.</p>
           <span class="pie">Leer la guía</span>
         </a>
-        <div class="guia-card pronto" data-text="cargador gan usb-c carga rapida">
-          <h3>Cargadores USB-C y GaN</h3>
-          <p>Qué vatios necesita tu móvil, tu tablet y tu portátil.</p>
-          <span class="pie">En preparación</span>
-        </div>
+        <a class="guia-card" href="#guia-cargador" data-text="cargador gan usb-c carga rapida pd pps vatios iphone samsung pixel macbook cable">
+          <h3>Cómo elegir un cargador rápido USB-C</h3>
+          <p>Qué vatios necesita tu móvil, tu tablet y tu portátil, y por qué importan PD y PPS.</p>
+          <span class="pie">Leer la guía</span>
+        </a>
         <div class="guia-card pronto" data-text="auriculares inalambricos bluetooth cancelacion ruido">
           <h3>Auriculares inalámbricos</h3>
           <p>Cancelación de ruido, batería y precio: qué compensa en cada gama.</p>
@@ -294,6 +295,92 @@ footer .hueco{background:var(--soft); border-radius:6px; padding:0 6px; color:va
         </details>
 
         <div class="comparar"><b>Comparativa de modelos y precios</b><br>Aquí aparecerán los powerbanks con su precio en cada tienda cuando conectemos el comparador.</div>
+      </article>
+    </section>
+
+    <section id="guia-cargador">
+      <article>
+        <div class="kicker">Guía de compra</div>
+        <h2>Cómo elegir un cargador rápido USB-C</h2>
+        <p class="meta">Datos de carga y precios revisados en octubre de 2026.</p>
+        <p>Para casi cualquier móvil actual basta un cargador <b>USB-C de 45 W con USB Power Delivery (PD) y PPS</b>. Carga a tope un iPhone, un Samsung o un Pixel, y también una tablet o un portátil pequeño. Si solo cargas un iPhone, uno de 30 a 40 W ya da la máxima velocidad. Si quieres cargar también el portátil, sube a 65 W o más.</p>
+
+        <h3>1. Lo que importa: vatios, PD y PPS</h3>
+        <ul>
+          <li><b>Vatios (W):</b> la potencia máxima. Más vatios no estropea el móvil: el teléfono pide solo lo que acepta.</li>
+          <li><b>USB Power Delivery (PD):</b> el estándar de carga rápida por USB-C. Lo usan iPhone, Pixel, Samsung, tablets y portátiles. Si la ficha no dice «PD», descártalo.</li>
+          <li><b>PPS:</b> una función de PD que ajusta el voltaje poco a poco. Los Samsung Galaxy la necesitan para su carga súper rápida: sin PPS, un Galaxy S25 Ultra se queda en unos 23 W aunque el cargador sea de 65 W.</li>
+        </ul>
+        <p>Quick Charge, SuperVOOC o HyperCharge son protocolos propios de cada marca. Solo dan su máxima velocidad con el cargador original; con un cargador PD normal cargan, pero más despacio.</p>
+
+        <h3>2. Cuántos vatios aprovecha tu dispositivo</h3>
+        <div class="tabla"><table>
+          <thead><tr><th>Dispositivo</th><th>Máximo por cable</th><th>Cargador recomendado</th></tr></thead>
+          <tbody>
+            <tr><td>iPhone 17, 17 Pro y 17 Pro Max</td><td>Unos 36 W (50 % en unos 20 min)</td><td>USB-C PD de 40 W</td></tr>
+            <tr><td>iPhone 16 y anteriores con USB-C, iPhone Air</td><td>50 % en unos 30 min con 20 W</td><td>USB-C PD de 20 a 30 W</td></tr>
+            <tr><td>Galaxy S25+ y S25 Ultra</td><td>45 W</td><td>USB-C PD <b>con PPS</b> de 45 W</td></tr>
+            <tr><td>Galaxy S25</td><td>25 W</td><td>USB-C PD con PPS de 25 W o más</td></tr>
+            <tr><td>Pixel 10 Pro XL</td><td>45 W (70 % en 30 min)</td><td>USB-C PD con PPS de 45 W</td></tr>
+            <tr><td>Pixel 10 y 10 Pro</td><td>Unos 30 W (55 % en 30 min)</td><td>USB-C PD con PPS de 30 W o más</td></tr>
+            <tr><td>Xiaomi, Oppo, OnePlus con carga propia</td><td>67 a 120 W solo con su cargador</td><td>El original de la marca</td></tr>
+            <tr><td>MacBook Air M4</td><td>67 W en carga rápida</td><td>USB-C PD de 65 a 70 W</td></tr>
+            <tr><td>MacBook Pro 14"</td><td>96 W en carga rápida</td><td>USB-C PD de 100 W</td></tr>
+          </tbody>
+        </table></div>
+        <p>Con el iPhone 17, un cargador de 20 W tarda 1 h 50 min en la carga completa y uno de 40 W, 1 h 42 min. La diferencia se nota sobre todo en los primeros 20 minutos.</p>
+
+        <h3>3. Uno o varios puertos</h3>
+        <p>Un cargador de varios puertos <b>reparte su potencia</b>. El número grande de la caja es el total, no lo que da cada puerto a la vez. Un cargador de 65 W con dos USB-C da 65 W por un solo puerto, pero con dos aparatos puede bajar a 45 W + 20 W.</p>
+        <ul>
+          <li><b>Un solo móvil:</b> un puerto, más pequeño y barato.</li>
+          <li><b>Móvil + reloj o auriculares:</b> dos puertos y 45 W totales van sobrados.</li>
+          <li><b>Móvil + portátil:</b> 65 W o más, comprobando cuánto da el puerto principal con los dos conectados.</li>
+        </ul>
+
+        <h3>4. GaN, cable y seguridad</h3>
+        <p><b>GaN</b> es el material de los cargadores modernos: más pequeños y se calientan menos con la misma potencia. A partir de 45 W merece la pena.</p>
+        <p><b>El cable también cuenta.</b> Un cable USB-C normal (3 A) aguanta hasta 60 W, suficiente para un móvil. Para un portátil de más de 60 W hace falta un cable de 5 A con chip e-marker, que suele indicar «100 W» o «240 W».</p>
+        <div class="aviso">En una prueba de la organización británica Electrical Safety First, 49 de 50 cargadores que imitaban a los de Apple no superaron las pruebas de seguridad eléctrica. Compra marcas conocidas, comprueba el marcado CE y desconfía de un «original» muy por debajo de su precio.</div>
+
+        <h3>5. Lista rápida antes de comprar</h3>
+        <ul>
+          <li>Puerto USB-C y la indicación USB Power Delivery (PD).</li>
+          <li>Si es para un Samsung o un Pixel, también PPS.</li>
+          <li>Vatios suficientes para tu dispositivo más exigente.</li>
+          <li>Si tiene varios puertos, cuánto da cada uno a la vez.</li>
+          <li>Un cable USB-C a USB-C (de 5 A si es para un portátil de más de 60 W).</li>
+          <li>Marca conocida y marcado CE.</li>
+        </ul>
+
+        <h3>6. Precios orientativos</h3>
+        <div class="tabla"><table>
+          <thead><tr><th>Cargador</th><th>Puertos</th><th>Precio habitual</th><th>Mejor precio visto</th></tr></thead>
+          <tbody>
+            <tr><td>Anker Nano 45 W</td><td>1 USB-C</td><td>39,99 €</td><td>29,59 € (sept. 2026)</td></tr>
+            <tr><td>Ugreen Nexode 65 W GaN</td><td>2 USB-C + 1 USB-A</td><td>29,99 €</td><td>18,79 € (sept. 2026)</td></tr>
+            <tr><td>Apple 40 W Dynamic Power Adapter</td><td>1 USB-C</td><td>45 € (sin cable)</td><td>—</td></tr>
+          </tbody>
+        </table></div>
+        <p>Los precios cambian a menudo: compruébalos en la tienda antes de comprar. Solo publicamos un cargador como <b>chollo cazado</b> cuando baja al menos un 20 % de su precio habitual y está en su mínimo de los últimos meses.</p>
+
+        <h3>7. Preguntas frecuentes</h3>
+        <details>
+          <summary>¿Un cargador de más vatios estropea el móvil?</summary>
+          <p>No. El móvil y el cargador acuerdan la potencia y el teléfono solo toma la que admite.</p>
+        </details>
+        <details>
+          <summary>¿Tiene que ser de la misma marca que mi móvil?</summary>
+          <p>No, salvo en marcas con carga propia como Xiaomi u Oppo. Para iPhone, Samsung y Pixel basta un cargador USB-C PD de una marca fiable (con PPS en Samsung y Pixel).</p>
+        </details>
+        <details>
+          <summary>¿Puedo usar el cargador del portátil para el móvil?</summary>
+          <p>Sí, si es USB-C PD. El móvil cargará a su velocidad máxima, ni más ni menos.</p>
+        </details>
+
+        <p class="meta">Fuentes: pruebas de carga de Notebookcheck (iPhone 17), SamMobile y techtest.org (Galaxy S25), 9to5Google y GSMArena (Pixel 10), Ugreen (MacBook), Faceofit (cables), Trusted Reviews (cargadores falsos) y precios de Gizmodo y Teknófilo.</p>
+
+        <div class="comparar"><b>Comparativa de modelos y precios</b><br>Aquí aparecerán los cargadores con su precio en cada tienda cuando conectemos el comparador.</div>
       </article>
     </section>
 
